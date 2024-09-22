@@ -1,9 +1,11 @@
-2024-09-22 22:05:42.645 [main] INFO  org.example.Main - Starting the calculator application
-2024-09-22 22:05:45.175 [main] INFO  org.example.Main - User selected operation: 1
-2024-09-22 22:05:46.256 [main] INFO  org.example.Main - Square root of 563.0 is: 23.727621035409346
-2024-09-22 22:05:47.933 [main] INFO  org.example.Main - User selected operation: 2
-2024-09-22 22:05:49.179 [main] ERROR org.example.Main - Error during factorial calculation: Factorial of a negative number is not defined.
-2024-09-22 22:05:52.135 [main] INFO  org.example.Main - User selected operation: 3
-2024-09-22 22:05:53.208 [main] INFO  org.example.Main - Log of 52452.0 is: 10.867653744651316
-2024-09-22 22:05:54.427 [main] INFO  org.example.Main - User selected operation: 0
-2024-09-22 22:05:54.427 [main] INFO  org.example.Main - Exiting the application
+2024-09-22 23:04:07.859 [main] INFO  org.example.Main - event=application_start status=success message='Starting the calculator application'
+2024-09-22 23:04:10.051 [main] INFO  org.example.Main - event=operation_selected operation=1 status=success
+2024-09-22 23:04:10.860 [main] INFO  org.example.Main - event=sqrt_calculation operand=5.0 result=2.23606797749979 status=success
+2024-09-22 23:04:12.448 [main] INFO  org.example.Main - event=operation_selected operation=2 status=success
+2024-09-22 23:04:13.243 [main] INFO  org.example.Main - event=factorial_calculation operand=6 result=720 status=success
+2024-09-22 23:04:16.021 [main] INFO  org.example.Main - event=operation_selected operation=3 status=success
+2024-09-22 23:04:17.357 [main] INFO  org.example.Main - event=log_calculation operand=6563432.0 result=15.697024194845884 status=success
+2024-09-22 23:04:20.252 [main] INFO  org.example.Main - event=operation_selected operation=4 status=success
+2024-09-22 23:04:23.234 [main] INFO  org.example.Main - event=power_calculation base=3.0 exponent=1.0 result=3.0 status=success
+2024-09-22 23:04:24.795 [main] INFO  org.example.Main - event=operation_selected operation=0 status=success
+2024-09-22 23:04:24.795 [main] INFO  org.example.Main - event=application_exit status=success message='Exiting the application'
