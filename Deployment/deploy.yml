@@ -2,7 +2,7 @@
 - name: Pull Docker Image of Calculator
   hosts: all
   vars:
-    ansible_python_interpreter: /Users/vinnie/anaconda3/lib/python3.11
+    ansible_python_interpreter: /Users/vinnie/anaconda3/bin/python3
   tasks:
     - name: Pull image
       docker_image:
