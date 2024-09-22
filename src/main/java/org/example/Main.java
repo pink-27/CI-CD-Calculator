@@ -12,7 +12,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.print("Enter operation (1: sqrt, 2: factorial, 3: log, 4: power, 0: exit) randrand: ");
+            System.out.print("Enter operation (1: sqrt, 2: factorial, 3: log, 4: power, 0: exit) randrandi: ");
             String input = sc.nextLine().trim();
             try {
                 int operation = Integer.parseInt(input);
