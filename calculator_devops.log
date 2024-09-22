@@ -1,0 +1,9 @@
+2024-09-22 22:05:42.645 [main] INFO  org.example.Main - Starting the calculator application
+2024-09-22 22:05:45.175 [main] INFO  org.example.Main - User selected operation: 1
+2024-09-22 22:05:46.256 [main] INFO  org.example.Main - Square root of 563.0 is: 23.727621035409346
+2024-09-22 22:05:47.933 [main] INFO  org.example.Main - User selected operation: 2
+2024-09-22 22:05:49.179 [main] ERROR org.example.Main - Error during factorial calculation: Factorial of a negative number is not defined.
+2024-09-22 22:05:52.135 [main] INFO  org.example.Main - User selected operation: 3
+2024-09-22 22:05:53.208 [main] INFO  org.example.Main - Log of 52452.0 is: 10.867653744651316
+2024-09-22 22:05:54.427 [main] INFO  org.example.Main - User selected operation: 0
+2024-09-22 22:05:54.427 [main] INFO  org.example.Main - Exiting the application
