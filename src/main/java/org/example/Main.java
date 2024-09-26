@@ -8,7 +8,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        logger.info("event=application_start status=success message='Starting the calculator application'");
+        logger.info("Starting the calculator application");
         Scanner sc = new Scanner(System.in);
 
         while (true) {
@@ -16,7 +16,7 @@ public class Main {
             String input = sc.nextLine().trim();
             try {
                 int operation = Integer.parseInt(input);
-                logger.info("event=operation_selected operation={} status=success", operation);
+                logger.info("Operation selected: {}", operation);
 
                 switch (operation) {
                     case 1:
@@ -32,14 +32,14 @@ public class Main {
                         handlePower(sc);
                         break;
                     case 0:
-                        logger.info("event=application_exit status=success message='Exiting the application'");
+                        logger.info("Exiting the application");
                         return;
                     default:
-                        logger.warn("event=invalid_operation operation={} status=failure message='Invalid operation selected'", operation);
+                        logger.warn("Invalid operation selected: {}", operation);
                         System.out.println("Invalid operation. Please select a valid option.");
                 }
             } catch (NumberFormatException e) {
-                logger.error("event=invalid_input input='{}' status=failure message='Invalid input for operation' error_type={}", input, e.getClass().getSimpleName());
+                logger.error("Invalid input for operation: '{}'. Error: {}", input, e.getMessage());
                 System.out.println("Invalid input. Please enter a valid integer for the operation.");
             }
         }
@@ -55,12 +55,12 @@ public class Main {
             }
             double result = Math.sqrt(operand);
             System.out.println(result);
-            logger.info("event=sqrt_calculation operand={} result={} status=success", operand, result);
+            logger.info("Square root calculation: operand = {}, result = {}", operand, result);
         } catch (NumberFormatException e) {
-            logger.error("event=sqrt_calculation input='{}' status=failure message='Invalid input for sqrt operation' error_type={}", input, e.getClass().getSimpleName());
+            logger.error("Invalid input for sqrt operation: '{}'. Error: {}", input, e.getMessage());
             System.out.println("Error: Please enter a valid number for square root calculation.");
         } catch (IllegalArgumentException e) {
-            logger.error("event=sqrt_calculation input={} status=failure message='{}' error_type={}", input, e.getMessage(), e.getClass().getSimpleName());
+            logger.error("Error in sqrt calculation: {}. Input: {}", e.getMessage(), input);
             System.out.println("Error: " + e.getMessage());
         }
     }
@@ -76,12 +76,12 @@ public class Main {
             long result = 1;
             for (int i = 2; i <= operand; i++) result *= i;
             System.out.println(result);
-            logger.info("event=factorial_calculation operand={} result={} status=success", operand, result);
+            logger.info("Factorial calculation: operand = {}, result = {}", operand, result);
         } catch (NumberFormatException e) {
-            logger.error("event=factorial_calculation input='{}' status=failure message='Invalid input for factorial operation' error_type={}", input, e.getClass().getSimpleName());
+            logger.error("Invalid input for factorial operation: '{}'. Error: {}", input, e.getMessage());
             System.out.println("Error: Please enter a valid integer for factorial calculation.");
         } catch (IllegalArgumentException e) {
-            logger.error("event=factorial_calculation input={} status=failure message='{}' error_type={}", input, e.getMessage(), e.getClass().getSimpleName());
+            logger.error("Error in factorial calculation: {}. Input: {}", e.getMessage(), input);
             System.out.println("Error: " + e.getMessage());
         }
     }
@@ -96,12 +96,12 @@ public class Main {
             }
             double result = Math.log(operand);
             System.out.println(result);
-            logger.info("event=log_calculation operand={} result={} status=success", operand, result);
+            logger.info("Logarithm calculation: operand = {}, result = {}", operand, result);
         } catch (NumberFormatException e) {
-            logger.error("event=log_calculation input='{}' status=failure message='Invalid input for logarithm operation' error_type={}", input, e.getClass().getSimpleName());
+            logger.error("Invalid input for logarithm operation: '{}'. Error: {}", input, e.getMessage());
             System.out.println("Error: Please enter a valid number for logarithm calculation.");
         } catch (IllegalArgumentException e) {
-            logger.error("event=log_calculation input={} status=failure message='{}' error_type={}", input, e.getMessage(), e.getClass().getSimpleName());
+            logger.error("Error in logarithm calculation: {}. Input: {}", e.getMessage(), input);
             System.out.println("Error: " + e.getMessage());
         }
     }
@@ -118,9 +118,9 @@ public class Main {
 
             double result = Math.pow(base, exponent);
             System.out.println(result);
-            logger.info("event=power_calculation base={} exponent={} result={} status=success", base, exponent, result);
+            logger.info("Power calculation: base = {}, exponent = {}, result = {}", base, exponent, result);
         } catch (NumberFormatException e) {
-            logger.error("event=power_calculation status=failure message='Invalid input for power operation' error_type={}", e.getClass().getSimpleName());
+            logger.error("Invalid input for power operation. Error: {}", e.getMessage());
             System.out.println("Error: Please enter valid numbers for the power calculation.");
         }
     }
