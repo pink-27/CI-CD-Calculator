@@ -14,33 +14,37 @@ public class Main {
         while (true) {
             System.out.print("Enter operation (1: sqrt, 2: factorial, 3: log, 4: power, 0: exit): ");
             String input = sc.nextLine().trim();
-            try {
-                int operation = Integer.parseInt(input);
-                logger.info("Operation selected: {}", operation);
+            int operation = -1;
 
-                switch (operation) {
-                    case 1:
-                        handleSqrt(sc);
-                        break;
-                    case 2:
-                        handleFactorial(sc);
-                        break;
-                    case 3:
-                        handleLog(sc);
-                        break;
-                    case 4:
-                        handlePower(sc);
-                        break;
-                    case 0:
-                        logger.info("Exiting the application");
-                        return;
-                    default:
-                        logger.warn("Invalid operation selected: {}", operation);
-                        System.out.println("Invalid operation. Please select a valid option.");
-                }
+            try {
+                operation = Integer.parseInt(input);
+                logger.info("Operation selected: {}", operation);
             } catch (NumberFormatException e) {
                 logger.error("Invalid input for operation: '{}'. Error: {}", input, e.getMessage());
                 System.out.println("Invalid input. Please enter a valid integer for the operation.");
+                continue; // Skip the rest of the loop and prompt again
+            }
+
+            switch (operation) {
+                case 1:
+                    handleSqrt(sc);
+                    break;
+                case 2:
+                    handleFactorial(sc);
+                    break;
+                case 3:
+                    handleLog(sc);
+                    break;
+                case 4:
+                    handlePower(sc);
+                    break;
+                case 0:
+                    logger.info("Exiting the application");
+                    sc.close(); // Close the scanner before exiting
+                    return;
+                default:
+                    logger.warn("Invalid operation selected: {}", operation);
+                    System.out.println("Invalid operation. Please select a valid option.");
             }
         }
     }
@@ -74,7 +78,9 @@ public class Main {
                 throw new IllegalArgumentException("Factorial of a negative number is not defined.");
             }
             long result = 1;
-            for (int i = 2; i <= operand; i++) result *= i;
+            for (int i = 2; i <= operand; i++) {
+                result *= i;
+            }
             System.out.println(result);
             logger.info("Factorial calculation: operand = {}, result = {}", operand, result);
         } catch (NumberFormatException e) {

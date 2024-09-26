@@ -20,3 +20,6 @@
 2024-09-26 15:37:52.606 [main] INFO  org.example.Main - event=factorial_calculation operand=5 result=120 status=success
 2024-09-26 15:37:52.607 [main] ERROR org.example.Main - event=factorial_calculation input='abc' status=failure message='Invalid input for factorial operation' error_type=NumberFormatException
 2024-09-26 15:37:52.609 [main] ERROR org.example.Main - event=factorial_calculation input=-5 status=failure message='Factorial of a negative number is not defined.' error_type=IllegalArgumentException
+2024-09-26 17:03:12.656 [main] INFO  org.example.Main - Starting the calculator application
+2024-09-26 17:03:15.075 [main] INFO  org.example.Main - Operation selected: 0
+2024-09-26 17:03:15.075 [main] INFO  org.example.Main - Exiting the application
