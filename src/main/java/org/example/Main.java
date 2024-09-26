@@ -61,7 +61,7 @@ public class Main {
             System.out.println("Error: Please enter a valid number for square root calculation.");
         } catch (IllegalArgumentException e) {
             logger.error("event=sqrt_calculation input={} status=failure message='{}' error_type={}", input, e.getMessage(), e.getClass().getSimpleName());
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage()); //print
         }
     }
 
