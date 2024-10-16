@@ -23,3 +23,33 @@
 2024-09-26 17:03:12.656 [main] INFO  org.example.Main - Starting the calculator application
 2024-09-26 17:03:15.075 [main] INFO  org.example.Main - Operation selected: 0
 2024-09-26 17:03:15.075 [main] INFO  org.example.Main - Exiting the application
+2024-09-30 00:58:13.587 [main] ERROR org.example.Main - Invalid input for sqrt operation: 'abc'. Error: For input string: "abc"
+2024-09-30 00:58:13.597 [main] ERROR org.example.Main - Error in sqrt calculation: Square root of a negative number is not allowed.. Input: -4
+2024-09-30 00:58:13.600 [main] INFO  org.example.Main - Logarithm calculation: operand = 10.0, result = 2.302585092994046
+2024-09-30 00:58:13.603 [main] INFO  org.example.Main - Square root calculation: operand = 16.0, result = 4.0
+2024-09-30 00:58:13.605 [main] ERROR org.example.Main - Error in logarithm calculation: Logarithm of zero or negative number is not allowed.. Input: -2
+2024-09-30 00:58:13.608 [main] ERROR org.example.Main - Invalid input for power operation. Error: For input string: "two"
+2024-09-30 00:58:13.611 [main] INFO  org.example.Main - Power calculation: base = 2.0, exponent = 3.0, result = 8.0
+2024-09-30 00:58:13.613 [main] ERROR org.example.Main - Invalid input for logarithm operation: 'abc'. Error: For input string: "abc"
+2024-09-30 00:58:13.615 [main] INFO  org.example.Main - Factorial calculation: operand = 5, result = 120
+2024-09-30 00:58:13.617 [main] ERROR org.example.Main - Invalid input for factorial operation: 'abc'. Error: For input string: "abc"
+2024-09-30 00:58:13.620 [main] ERROR org.example.Main - Error in factorial calculation: Factorial of a negative number is not defined.. Input: -5
+2024-09-30 00:58:09.220 [main] INFO  org.example.Main - Starting the calculator application
+2024-09-30 00:59:05.637 [main] INFO  org.example.Main - Starting the calculator application
+2024-09-30 00:59:08.263 [main] INFO  org.example.Main - Operation selected: 2
+2024-09-30 00:59:09.450 [main] INFO  org.example.Main - Factorial calculation: operand = 16, result = 20922789888000
+2024-09-30 00:59:50.046 [main] INFO  org.example.Main - Operation selected: 1
+2024-09-30 00:59:51.318 [main] INFO  org.example.Main - Square root calculation: operand = 16.0, result = 4.0
+2024-09-30 01:00:00.268 [main] INFO  org.example.Main - Operation selected: 3
+2024-09-30 01:00:02.309 [main] INFO  org.example.Main - Logarithm calculation: operand = 10.0, result = 2.302585092994046
+2024-09-30 01:00:09.089 [main] INFO  org.example.Main - Operation selected: 0
+2024-09-30 01:00:09.089 [main] INFO  org.example.Main - Exiting the application
+2024-10-16 13:29:56.808 [main] INFO  org.example.Main - Starting the calculator application
+2024-10-16 13:30:02.325 [main] INFO  org.example.Main - Operation selected: 2
+2024-10-16 13:30:07.533 [main] INFO  org.example.Main - Factorial calculation: operand = 4, result = 24
+2024-10-16 13:30:09.350 [main] INFO  org.example.Main - Operation selected: 1
+2024-10-16 13:30:10.641 [main] INFO  org.example.Main - Square root calculation: operand = 532.0, result = 23.065125189341593
+2024-10-16 13:30:13.263 [main] INFO  org.example.Main - Operation selected: 4
+2024-10-16 13:30:17.940 [main] INFO  org.example.Main - Power calculation: base = 2.0, exponent = 10.0, result = 1024.0
+2024-10-16 13:30:19.985 [main] INFO  org.example.Main - Operation selected: 0
+2024-10-16 13:30:19.985 [main] INFO  org.example.Main - Exiting the application
