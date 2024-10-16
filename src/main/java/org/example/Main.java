@@ -111,7 +111,7 @@ public class Main {
             System.out.println("Error: " + e.getMessage());
         }
     }
-//test pipeline
+//test pipeline final
     public static void handlePower(Scanner sc) {
         try {
             System.out.print("Enter base: ");
