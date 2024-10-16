@@ -112,6 +112,7 @@ public class Main {
         }
     }
 //test pipeline
+
     public static void handlePower(Scanner sc) {
         try {
             System.out.print("Enter base: ");
