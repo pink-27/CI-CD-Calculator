@@ -59,7 +59,7 @@ class CalculatorTest {
         assertTrue(outContent.toString().contains("Error: Please enter a valid integer for factorial calculation."));
     }
 
-    // Test square root operation
+    // Test square root operation k
     @Test
     void testSqrtValidInput() {
         String input = "16\n";
