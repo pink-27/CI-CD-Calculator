@@ -53,3 +53,25 @@
 2024-10-16 13:30:17.940 [main] INFO  org.example.Main - Power calculation: base = 2.0, exponent = 10.0, result = 1024.0
 2024-10-16 13:30:19.985 [main] INFO  org.example.Main - Operation selected: 0
 2024-10-16 13:30:19.985 [main] INFO  org.example.Main - Exiting the application
+2024-10-16 17:59:26.689 [main] ERROR org.example.Main - Invalid input for sqrt operation: 'abc'. Error: For input string: "abc"
+2024-10-16 17:59:26.700 [main] ERROR org.example.Main - Error in sqrt calculation: Square root of a negative number is not allowed.. Input: -4
+2024-10-16 17:59:26.702 [main] INFO  org.example.Main - Logarithm calculation: operand = 10.0, result = 2.302585092994046
+2024-10-16 17:59:26.704 [main] INFO  org.example.Main - Square root calculation: operand = 16.0, result = 4.0
+2024-10-16 17:59:26.706 [main] ERROR org.example.Main - Error in logarithm calculation: Logarithm of zero or negative number is not allowed.. Input: -2
+2024-10-16 17:59:26.708 [main] ERROR org.example.Main - Invalid input for power operation. Error: For input string: "two"
+2024-10-16 17:59:26.710 [main] INFO  org.example.Main - Power calculation: base = 2.0, exponent = 3.0, result = 8.0
+2024-10-16 17:59:26.713 [main] ERROR org.example.Main - Invalid input for logarithm operation: 'abc'. Error: For input string: "abc"
+2024-10-16 17:59:26.717 [main] INFO  org.example.Main - Factorial calculation: operand = 5, result = 120
+2024-10-16 17:59:26.721 [main] ERROR org.example.Main - Invalid input for factorial operation: 'abc'. Error: For input string: "abc"
+2024-10-16 17:59:26.725 [main] ERROR org.example.Main - Error in factorial calculation: Factorial of a negative number is not defined.. Input: -5
+2024-10-16 17:59:39.018 [main] ERROR org.example.Main - Invalid input for sqrt operation: 'abc'. Error: For input string: "abc"
+2024-10-16 17:59:39.030 [main] ERROR org.example.Main - Error in sqrt calculation: Square root of a negative number is not allowed.. Input: -4
+2024-10-16 17:59:39.032 [main] INFO  org.example.Main - Logarithm calculation: operand = 10.0, result = 2.302585092994046
+2024-10-16 17:59:39.033 [main] INFO  org.example.Main - Square root calculation: operand = 16.0, result = 4.0
+2024-10-16 17:59:39.034 [main] ERROR org.example.Main - Error in logarithm calculation: Logarithm of zero or negative number is not allowed.. Input: -2
+2024-10-16 17:59:39.035 [main] ERROR org.example.Main - Invalid input for power operation. Error: For input string: "two"
+2024-10-16 17:59:39.037 [main] INFO  org.example.Main - Power calculation: base = 2.0, exponent = 3.0, result = 8.0
+2024-10-16 17:59:39.038 [main] ERROR org.example.Main - Invalid input for logarithm operation: 'abc'. Error: For input string: "abc"
+2024-10-16 17:59:39.039 [main] INFO  org.example.Main - Factorial calculation: operand = 5, result = 120
+2024-10-16 17:59:39.041 [main] ERROR org.example.Main - Invalid input for factorial operation: 'abc'. Error: For input string: "abc"
+2024-10-16 17:59:39.042 [main] ERROR org.example.Main - Error in factorial calculation: Factorial of a negative number is not defined.. Input: -5
