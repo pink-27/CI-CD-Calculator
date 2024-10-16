@@ -10,4 +10,4 @@
         source: pull
 
     - name: Running container
-      shell: docker run -it -d --name Calculator pink27/calculator
+      shell: docker run -d --name Calculator pink27/calculator
